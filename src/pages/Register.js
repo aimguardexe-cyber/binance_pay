@@ -32,7 +32,7 @@ export default function Register() {
     >
       <div className="flex flex-col gap-sm">
         <button 
-          onClick={() => window.location.href = 'http://localhost:5000/api/merchant/auth/google'}
+          onClick={() => window.location.href = `${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/merchant/auth/google`}
           className="flex items-center justify-center gap-md h-[48px] rounded-pill border border-border-light bg-canvas text-ink font-sans font-medium text-[14px] hover:bg-soft-stone transition-colors"
         >
           <GoogleIcon />
@@ -40,7 +40,7 @@ export default function Register() {
         </button>
 
         <button 
-          onClick={() => window.location.href = 'http://localhost:5000/api/merchant/auth/discord'}
+          onClick={() => window.location.href = `${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/merchant/auth/discord`}
           className="flex items-center justify-center gap-md h-[48px] rounded-pill border border-transparent bg-[#5865F2] text-white font-sans font-medium text-[14px] hover:bg-[#4752C4] transition-colors"
         >
           <DiscordIcon />
