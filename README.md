@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Binance Pay Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, enterprise-grade frontend interface for the **Binance Pay** crypto payment gateway. Built to provide a seamless, highly optimized experience for managing crypto payments, API keys, webhooks, and monitoring transactions.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Real-time Dashboard:** Monitor transactions, available balance, and API metrics.
+- **Enterprise UI/UX:** Clean, dark-mode focused, modern design powered by Tailwind CSS.
+- **Secure Authentication:** JWT & OAuth based protected routes.
+- **Developer First:** Built-in API documentation and webhook monitoring pages.
+- **Highly Optimized:** Fast loading speeds, smooth scrolling, and optimized React components.
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Framework:** React.js
+- **Styling:** Tailwind CSS
+- **Routing:** React Router v6
+- **Data Fetching:** React Query & Axios
+- **Icons:** Lucide React
+- **Animations:** Framer Motion & Lenis (Smooth Scrolling)
+- **Configuration:** Craco (Create React App Configuration Override)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Prerequisites
 
-### `npm test`
+Before you begin, ensure you have the following installed on your local machine:
+- **Node.js** (v16.x or higher)
+- **npm** or **yarn**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Installation & Setup
 
-### `npm run build`
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd binance-pay/frontend
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Environment Variables**
+   Create a `.env` file in the root of the frontend directory:
+   ```env
+   REACT_APP_BACKEND_URL=http://localhost:5000
+   ```
+   *(Update the backend URL if your API is hosted elsewhere)*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Start Development Server**
+   ```bash
+   npm start
+   ```
+   The application will start running on [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+## 🔨 Build for Production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To create an optimized production build, run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
+This command compiles the React code and outputs the minified production-ready files into the `build/` directory. You can easily deploy this folder to Vercel, Netlify, AWS S3, or any static hosting service.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🗂️ Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+frontend/
+├── public/              # Static assets (index.html, favicon.svg)
+├── src/                 
+│   ├── components/      # Reusable UI components (Navbar, ProtectedRoute)
+│   ├── context/         # Global React context (AuthContext)
+│   ├── pages/           # Application views (Dashboard, Checkout, Login)
+│   ├── App.js           # Main landing page component
+│   └── index.js         # Entry point & React Router configuration
+├── craco.config.js      # Webpack overrides
+└── tailwind.config.js   # Tailwind CSS configuration
+```
 
-## Learn More
+## 🤝 Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions, issues, and feature requests are welcome!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📜 License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
