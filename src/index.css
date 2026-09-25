@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: transparent;
+    color: #212121;
+}
+
+code {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+    * {
+        border-color: #e5e7eb;
+    }
+}
+
+/* Dashboard table overrides for Cohere styling */
+.dash-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.dash-table th {
+    text-align: left;
+    padding: 16px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #616161;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #f1f5ff; /* pale blue wash for headers */
+}
+.dash-table td {
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #212121;
+    border-bottom: 1px solid #e5e7eb;
+}
+.dash-table tr:hover td {
+    background-color: #eeece7; /* soft stone */
+}
+.dash-table tbody tr:last-child td {
+    border-bottom: none;
+}
