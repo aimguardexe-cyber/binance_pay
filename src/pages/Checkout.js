@@ -285,7 +285,7 @@ export default function Checkout() {
             {step === 2 && (
               <motion.div 
                 key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }}
-                className="p-lg xs:p-xl flex flex-col flex-1 relative h-full justify-between"
+                className="p-lg xs:p-xl flex flex-col flex-1 relative min-h-full justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between border-b border-border-light pb-md mb-lg">
