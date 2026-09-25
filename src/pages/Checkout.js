@@ -398,7 +398,7 @@ export default function Checkout() {
                    </div>
                  </div>
                  
-                 <a href={order.payUrl || "binance://"} className="flex-1 h-[44px] rounded-[4px] bg-[#0c1421] text-white font-medium text-[15px] flex items-center justify-center shadow-sm hover:bg-black transition-colors cursor-pointer tracking-wide">
+                 <a href={order.payUrl || "binance://"} target="_top" className="flex-1 h-[44px] rounded-[4px] bg-[#0c1421] text-white font-medium text-[15px] flex items-center justify-center shadow-sm hover:bg-black transition-colors cursor-pointer tracking-wide">
                    Continue
                  </a>
                </div>
