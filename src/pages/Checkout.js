@@ -94,14 +94,14 @@ export default function Checkout() {
   };
 
   return (
-    <div className="min-h-[100dvh] bg-ink/40 xs:backdrop-blur-sm flex items-center justify-center p-0 xs:p-md font-sans selection:bg-action-blue selection:text-white transition-all duration-500 ease-in-out">
+    <div className="h-[100dvh] bg-ink/40 xs:backdrop-blur-sm flex items-center justify-center p-0 xs:p-md font-sans selection:bg-action-blue selection:text-white transition-all duration-500 ease-in-out overflow-hidden">
       <div className="absolute inset-0 z-0 cursor-default w-full h-full"></div>
       
       <motion.div 
         layout
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        className="w-full max-w-full xs:max-w-[760px] bg-canvas xs:rounded-xl shadow-2xl overflow-hidden relative z-10 flex flex-col xs:flex-row min-h-[100dvh] xs:min-h-[480px] xs:h-auto transition-all duration-500 ease-out"
+        className="w-full max-w-full xs:max-w-[760px] bg-canvas xs:rounded-xl shadow-2xl overflow-hidden relative z-10 flex flex-col xs:flex-row h-[100dvh] xs:min-h-[480px] xs:h-auto transition-all duration-500 ease-out"
       >
         
         {/* Cancel Confirmation Overlay */}
@@ -374,7 +374,7 @@ export default function Checkout() {
 
           {/* Mobile Only Sticky Footer */}
           {step === 2 && order && (
-             <div className="xs:hidden mt-auto bg-canvas shadow-[0_-4px_12px_rgba(0,0,0,0.05)] z-20">
+             <div className="xs:hidden mt-auto sticky bottom-0 left-0 w-full bg-canvas shadow-[0_-4px_12px_rgba(0,0,0,0.1)] z-20 border-t border-border-light/50">
                
                {/* Buyer Protection Bar */}
                <div className="bg-[#d5e4fc] px-4 py-2.5 flex items-center justify-center gap-1.5 border-b border-border-light/50">
